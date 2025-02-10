@@ -60,6 +60,7 @@ set yaw_motors_reversed = ON
 set small_angle = 180
 
 set deadband = 2
+set yaw_deadband = 2
 
 set report_cell_voltage = ON
 

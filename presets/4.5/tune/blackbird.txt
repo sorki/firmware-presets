@@ -1,0 +1,100 @@
+#$ TITLE: Blackbird tune
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: tune, pid, filters
+#$ AUTHOR: sorki
+#$ DESCRIPTION: WIP, Apex
+#$ PRIORITY: 0
+
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
+
+# -- PID values --
+set simplified_pids_mode = OFF
+
+set p_roll = 66
+set i_roll = 120
+set d_roll = 37
+set d_min_roll = 37
+set f_roll = 120
+
+set p_pitch = 70
+set i_pitch = 120
+set d_pitch = 40
+set d_min_pitch = 40
+set f_pitch = 125
+
+set p_yaw = 83
+set i_yaw = 120
+set d_yaw = 0
+set d_min_yaw = 0
+set f_yaw = 120
+
+# - PID Controller settings -
+## -- PIDsum limits --
+set pidsum_limit_yaw = 900
+
+## -- Feed-forward --
+set feedforward_jitter_factor = 9
+set feedforward_smooth_factor = 40
+set feedforward_averaging = OFF
+set feedforward_boost = 20
+set feedforward_max_rate_limit = 95
+
+## -- I Term Relax --
+set iterm_relax = RP
+set iterm_relax_type = SETPOINT
+set iterm_relax_cutoff = 20
+
+# -- Throttle and motor settings --
+set throttle_boost = 4
+set thrust_linear = 1
+
+# -- TPA --
+set tpa_mode = PD
+set tpa_rate = 65
+set tpa_breakpoint = 1650
+
+# - Filters -
+
+set simplified_gyro_filter = OFF
+set simplified_dterm_filter = OFF
+
+# -- Gyro lowpass filters --
+set gyro_lpf1_static_hz = 300
+set gyro_lpf1_type = PT1
+
+set gyro_lpf2_dyn_min_hz = 0
+set gyro_lpf2_dyn_max_hz = 0
+set gyro_lpf2_static_hz = 0
+
+# -- Gyro Dynamic Notches --
+set dyn_notch_count = 2
+# what's the default?
+# set dyn_notch_q = 500
+set dyn_notch_min_hz = 100
+
+# -- RPM filtering --
+set dshot_bidir = ON
+set rpm_filter_harmonics = 1
+set rpm_filter_q = 500
+set rpm_filter_min_hz = 150
+
+# -- Dterm filtering --
+set dterm_lpf1_dyn_min_hz = 127
+set dterm_lpf1_dyn_max_hz = 257
+set dterm_lpf1_type = BIQUAD
+
+set dterm_lpf2_static_hz = 257
+set dterm_lpf2_type = BIQUAD
+
+# - Motors -
+#$ OPTION BEGIN (CHECKED): DShot idle 5.4% (from default 5.5%)
+    set dshot_idle_value = 540
+#$ OPTION END
+
+# - RC Link -
+#$ OPTION BEGIN (CHECKED): RC Smoothing auto factor of 5
+    set rc_smoothing_auto_factor = 5
+#$ OPTION END

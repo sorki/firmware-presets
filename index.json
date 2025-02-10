@@ -5765,6 +5765,22 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/bnf/srkh7.txt",
+      "hash": "6d354d74641f9d3b00e5191243459e27cd5a17428d2f207009b20cfc9518e462",
+      "title": "Srks H7",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "bnf",
+        "diff"
+      ],
+      "author": "sorki",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/filters/aos_rc/aos_3.5_filters.txt",
       "hash": "207b31c1473442c3585da774337eb8b7417d5300fc2229750561b998ac503040",
       "title": "AOS 3.5 Filters",

@@ -34,10 +34,15 @@ adjrange 0 0 4 900 1200 12 4 0 0
 adjrange 1 0 4 1400 1600 12 4 0 0
 adjrange 2 0 4 1800 2100 12 4 0 0
 
-#$ INCLUDE: presets/4.5/tune/blackbird.txt
-#$ INCLUDE: presets/4.5/rates/Srsk_rates.txt
 #$ INCLUDE: presets/4.3/rc_link/elrs_500hz.txt
 #$ INCLUDE: presets/4.3/vtx/Unify_Pro32_HV_SA2_1.txt
+#$ INCLUDE: presets/4.5/tune/blackbird.txt
+
+# these are set as options in above tune, force
+set dshot_idle_value = 540
+set rc_smoothing_auto_factor = 5
+
+#$ INCLUDE: presets/4.5/rates/Srsk_rates.txt
 
 set vtx_band = 3
 set vtx_channel = 6

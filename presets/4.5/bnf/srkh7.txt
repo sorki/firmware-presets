@@ -39,8 +39,11 @@ adjrange 2 0 4 1800 2100 12 4 0 0
 #$ INCLUDE: presets/4.5/tune/blackbird.txt
 
 # these are set as options in above tune, force
+# MPU6k
+set gyro_lpf1_static_hz = 500
 set dshot_idle_value = 540
 set rc_smoothing_auto_factor = 5
+set rc_smoothing_auto_factor_throttle = 30
 
 #$ INCLUDE: presets/4.5/rates/Srsk_rates.txt
 

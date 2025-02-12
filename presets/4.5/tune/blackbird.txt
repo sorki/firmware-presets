@@ -33,6 +33,7 @@ set f_yaw = 120
 
 # - PID Controller settings -
 ## -- PIDsum limits --
+set pidsum_limit = 1000
 set pidsum_limit_yaw = 900
 
 ## -- Feed-forward --
@@ -63,23 +64,26 @@ set simplified_dterm_filter = OFF
 
 # -- Gyro lowpass filters --
 set gyro_lpf1_static_hz = 300
-set gyro_lpf1_type = PT1
+#$ OPTION BEGIN (CHECKED): MPU6k
+set gyro_lpf1_static_hz = 500
+#$ OPTION END
 
-set gyro_lpf2_dyn_min_hz = 0
-set gyro_lpf2_dyn_max_hz = 0
+set gyro_lpf1_type = PT1
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+
 set gyro_lpf2_static_hz = 0
 
 # -- Gyro Dynamic Notches --
-set dyn_notch_count = 2
-# what's the default?
-# set dyn_notch_q = 500
-set dyn_notch_min_hz = 100
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 150
 
 # -- RPM filtering --
 set dshot_bidir = ON
-set rpm_filter_harmonics = 1
+set rpm_filter_harmonics = 2
 set rpm_filter_q = 500
-set rpm_filter_min_hz = 150
+# set rpm_filter_min_hz = 150
 
 # -- Dterm filtering --
 set dterm_lpf1_dyn_min_hz = 127
@@ -89,12 +93,16 @@ set dterm_lpf1_type = BIQUAD
 set dterm_lpf2_static_hz = 257
 set dterm_lpf2_type = BIQUAD
 
+# Disable yaw lowpass
+set yaw_lowpass_hz = 0
+
 # - Motors -
 #$ OPTION BEGIN (CHECKED): DShot idle 5.4% (from default 5.5%)
     set dshot_idle_value = 540
 #$ OPTION END
 
 # - RC Link -
-#$ OPTION BEGIN (CHECKED): RC Smoothing auto factor of 5
+#$ OPTION BEGIN (CHECKED): RC Smoothing auto factor of 5, throttle of 30
     set rc_smoothing_auto_factor = 5
+    set rc_smoothing_auto_factor_throttle = 30
 #$ OPTION END

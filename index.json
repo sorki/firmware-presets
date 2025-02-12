@@ -5766,7 +5766,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/srkh7.txt",
-      "hash": "c9b6d64f126a66d21896b655d9c834488e98d95bc7d8c754c9d8546dd7ac48b8",
+      "hash": "7c9a0348221c0da4fea82e19260c5eb05512fe6486d6c73f2275f66195a37fff",
       "title": "Srks H7",
       "firmware_version": [
         "4.5"
@@ -7192,7 +7192,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/blackbird.txt",
-      "hash": "05a93ee9c87db266c131b71eb13d0cc405a971f44382052e9101fd82e663b27d",
+      "hash": "e5a10f4d977e4f88e9503c7dcc8f8f940bb857f06723835447cf7047c461d3ca",
       "title": "Blackbird tune",
       "firmware_version": [
         "4.5"

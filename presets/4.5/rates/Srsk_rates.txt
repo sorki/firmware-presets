@@ -45,7 +45,7 @@ set yaw_srate = 0
 rateprofile 2
 
 # rateprofile 2
-set rateprofile_name = LinearFire
+set rateprofile_name = Linear
 set rates_type = BETAFLIGHT
 set throttle_limit_percent = 100
 

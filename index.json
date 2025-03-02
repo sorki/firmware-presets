@@ -5765,9 +5765,73 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/bnf/srkh7.txt",
+      "fullPath": "presets/4.5/bnf/srk_blackbird.txt",
       "hash": "7c9a0348221c0da4fea82e19260c5eb05512fe6486d6c73f2275f66195a37fff",
       "title": "Srks H7",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "bnf",
+        "diff"
+      ],
+      "author": "sorki",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/bnf/srk_era_detailed.txt",
+      "hash": "0fa231074e3995b2487857d540d4507f6a90ea9539ae95179ed19b172226a965",
+      "title": "Srks ERA Detailed",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "bnf",
+        "diff"
+      ],
+      "author": "sorki",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/bnf/srk_era_detailed_blackbird_rest.txt",
+      "hash": "83f445757176dcab45aee0ea30755b1a75fba636ccb9815ac78a96a56111370a",
+      "title": "Srks ERA Detailed with Blackbird rest",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "bnf",
+        "diff"
+      ],
+      "author": "sorki",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/bnf/srk_era_simplified.txt",
+      "hash": "e75774e41eac776717d5970191854c4ff255f03b742ae6c43940ec46f59524aa",
+      "title": "Srks ERA Simplified",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "bnf",
+        "diff"
+      ],
+      "author": "sorki",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/bnf/srk_era_simplified_blackbird_rest.txt",
+      "hash": "22f29d9d51dc07d926b808922d3fcbd3e52284b85c3c975d23e8fa13ec07ef4a",
+      "title": "Srks ERA Simplified with Blackbird rest",
       "firmware_version": [
         "4.5"
       ],
@@ -6671,7 +6735,7 @@
     },
     {
       "fullPath": "presets/4.5/rates/Srsk_rates.txt",
-      "hash": "a11dadc9b4a5351134eb86306bb6afd77d5bf26eff7fd843c5f98b80b3456ab9",
+      "hash": "ab9da322800a89348f92ed0029ebd6f9e07b60b5dfc197fe0cbfcb11f725fdb8",
       "title": "Srks Rates",
       "firmware_version": [
         "4.3",
@@ -7208,6 +7272,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/tune/blackbird_rest.txt",
+      "hash": "a5ed5c79a345bfb375f3a6dcb17cd0e015d18c3a4ead78b3d338ebf736b41db5",
+      "title": "Blackbird tune",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "tune",
+        "pid",
+        "filters"
+      ],
+      "author": "sorki",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/tune/ctzsnooze_5in_4S_race.txt",
       "hash": "a82f335825d3b887072e6d502c2ae4f2361fa8e88874f59086d2ca8289691e8c",
       "title": "4S, 3\" to 5\" race tune by ctzsznooze",
@@ -7316,6 +7397,40 @@
       ],
       "author": "Ivan Efimov (Limon)",
       "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/itsfpv_era_detailed.txt",
+      "hash": "81082e6603e72736f54c2b6bb833ee27762634ec9aeb2715c0bdbc0929d8d34e",
+      "title": "It'sFPV ERA tune",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "tune",
+        "pid",
+        "filters"
+      ],
+      "author": "sorki",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/itsfpv_era_simplified.txt",
+      "hash": "8585cd64459a1e7a1329de2af3d97d0e300d44ec810a8a0aef0a67e8aa359910",
+      "title": "It'sFPV ERA tune",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "tune",
+        "pid",
+        "filters"
+      ],
+      "author": "sorki",
+      "priority": 0
     },
     {
       "fullPath": "presets/4.5/tune/karate/karate_brushless_whoop.txt",

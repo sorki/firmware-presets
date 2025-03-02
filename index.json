@@ -5766,7 +5766,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/srk_blackbird.txt",
-      "hash": "7c9a0348221c0da4fea82e19260c5eb05512fe6486d6c73f2275f66195a37fff",
+      "hash": "9f80455c0e13abb61efaea16448c1ecb62d2c2d8b299e8cada8692c7eeeefa96",
       "title": "Srks H7",
       "firmware_version": [
         "4.5"
@@ -6735,7 +6735,7 @@
     },
     {
       "fullPath": "presets/4.5/rates/Srsk_rates.txt",
-      "hash": "ab9da322800a89348f92ed0029ebd6f9e07b60b5dfc197fe0cbfcb11f725fdb8",
+      "hash": "1cdfe0dc7753317b37869c2b0b5a064266a3157553a656998222da020cbcfb92",
       "title": "Srks Rates",
       "firmware_version": [
         "4.3",

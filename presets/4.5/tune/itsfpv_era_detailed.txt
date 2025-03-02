@@ -1,0 +1,66 @@
+#$ TITLE: It'sFPV ERA tune
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: tune, pid, filters
+#$ AUTHOR: sorki
+#$ DESCRIPTION: WIP, ERA (w/o sliders)
+#$ PRIORITY: 0
+
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
+
+# -- PID values --
+set simplified_pids_mode = OFF
+
+set p_roll = 58
+set i_roll = 52
+set d_roll = 35
+set d_min_roll = 35
+set f_roll = 109
+
+set p_pitch = 70
+set i_pitch = 62
+set d_pitch = 45
+set d_min_pitch = 45
+set f_pitch = 130
+
+set p_yaw = 58
+set i_yaw = 52
+set d_yaw = 0
+set d_min_yaw = 0
+set f_yaw = 109
+
+# - Filters -
+
+set simplified_gyro_filter = OFF
+set simplified_dterm_filter = OFF
+
+# -- Gyro lowpass filters --
+
+set gyro_lpf1_type = PT1
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+
+set gyro_lpf2_type = PT1
+set gyro_lpf2_static_hz = 750
+
+# -- Gyro Dynamic Notches --
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 100
+
+# -- RPM filtering --
+set dshot_bidir = ON
+set rpm_filter_harmonics = 3
+set rpm_filter_min_hz = 100
+set rpm_filter_q = 500
+
+# -- Dterm filtering --
+set dterm_lpf1_dyn_min_hz = 90
+set dterm_lpf1_dyn_max_hz = 180
+set dterm_lpf1_dyn_expo = 5
+set dterm_lpf1_type = PT1
+
+set dterm_lpf2_static_hz = 180
+set dterm_lpf2_type = PT1

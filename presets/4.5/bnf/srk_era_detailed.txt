@@ -1,0 +1,81 @@
+#$ TITLE: Srks ERA Detailed
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: bnf, diff
+#$ AUTHOR: sorki
+#$ DESCRIPTION: Everything
+
+
+defaults nosave
+
+# feature
+feature TELEMETRY
+feature OSD
+feature ESC_SENSOR
+
+# serial
+serial 1 1 115200 57600 0 115200
+serial 2 2048 115200 57600 0 115200
+serial 5 64 115200 57600 0 115200
+serial 6 1024 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1800 2100 0 0
+aux 1 13 2 1800 2100 0 0
+aux 2 35 3 1300 1700 0 0
+
+# adjrange
+adjrange 0 0 4 900 1200 12 4 0 0
+adjrange 1 0 4 1400 1600 12 4 0 0
+adjrange 2 0 4 1800 2100 12 4 0 0
+
+#$ INCLUDE: presets/4.3/rc_link/elrs_500hz.txt
+#$ INCLUDE: presets/4.3/vtx/Unify_Pro32_HV_SA2_1.txt
+#$ INCLUDE: presets/4.5/tune/itsfpv_era_detailed.txt
+
+#$ INCLUDE: presets/4.5/rates/Srsk_rates.txt
+
+set vtx_band = 3
+set vtx_channel = 6
+set vtx_power = 3
+set vtx_freq = 5905
+set vcd_video_system = PAL
+
+set acc_hardware = NONE
+set acc_calibration = -1,93,223,1
+set baro_hardware = NONE
+set yaw_motors_reversed = ON
+set small_angle = 180
+
+set deadband = 2
+
+set report_cell_voltage = ON
+
+# osd
+set osd_warn_bitmask = 8191
+set osd_rssi_alarm = 98
+set osd_link_quality_alarm = 60
+set osd_rssi_dbm_alarm = -95
+set osd_cap_alarm = 110
+set osd_alt_alarm = 0
+set osd_tim1 = 2561
+set osd_rssi_pos = 87
+set osd_link_quality_pos = 14391
+set osd_rssi_dbm_pos = 14423
+set osd_tim_1_pos = 14796
+set osd_throttle_pos = 14401
+set osd_current_pos = 14806
+set osd_warnings_pos = 14761
+set osd_avg_cell_voltage_pos = 14785
+set osd_esc_tmp_pos = 14369
+set osd_displayport_device = MAX7456
+set osd_canvas_width = 30
+set osd_canvas_height = 16
+
+set craft_name = Apex
+set pilot_name = srk

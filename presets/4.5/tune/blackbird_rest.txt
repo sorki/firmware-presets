@@ -1,0 +1,48 @@
+#$ TITLE: Blackbird tune
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: tune, pid, filters
+#$ AUTHOR: sorki
+#$ DESCRIPTION: WIP, BB, Rest of the tweaks excluding PIDs and filters
+#$ PRIORITY: 0
+
+# - PID Controller settings -
+## -- PIDsum limits --
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 900
+
+## -- Feed-forward --
+set feedforward_jitter_factor = 9
+set feedforward_smooth_factor = 40
+set feedforward_averaging = OFF
+set feedforward_boost = 20
+set feedforward_max_rate_limit = 95
+
+## -- I Term Relax --
+set iterm_relax = RP
+set iterm_relax_type = SETPOINT
+set iterm_relax_cutoff = 20
+
+# -- Throttle and motor settings --
+set throttle_boost = 4
+set thrust_linear = 1
+
+# -- TPA --
+set tpa_mode = PD
+set tpa_rate = 65
+set tpa_breakpoint = 1650
+
+# - Motors -
+#$ OPTION BEGIN (CHECKED): DShot idle 5.4% (from default 5.5%)
+    set dshot_idle_value = 540
+#$ OPTION END
+
+# - RC Link -
+#$ OPTION BEGIN (CHECKED): RC Smoothing auto factor of 5, throttle of 30
+    set rc_smoothing_auto_factor = 5
+    set rc_smoothing_auto_factor_throttle = 30
+#$ OPTION END
+
+# -- TODO: Questionable
+# set yaw_lowpass_hz = 0

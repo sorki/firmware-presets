@@ -24,15 +24,7 @@ serial 6 1024 115200 57600 0 115200
 beacon RX_LOST
 beacon RX_SET
 
-# aux
-aux 0 0 0 1800 2100 0 0
-aux 1 13 2 1800 2100 0 0
-aux 2 35 3 1300 1700 0 0
-
-# adjrange
-adjrange 0 0 4 900 1200 12 4 0 0
-adjrange 1 0 4 1400 1600 12 4 0 0
-adjrange 2 0 4 1800 2100 12 4 0 0
+#$ INCLUDE: presets/4.5/bnf/srk_aux_adjrange.txt
 
 #$ INCLUDE: presets/4.3/rc_link/elrs_500hz.txt
 #$ INCLUDE: presets/4.3/vtx/Unify_Pro32_HV_SA2_1.txt

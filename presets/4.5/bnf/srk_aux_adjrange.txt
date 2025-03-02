@@ -1,0 +1,18 @@
+#$ TITLE: Srks aux and adjrange
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: bnf, diff
+#$ AUTHOR: sorki
+#$ DESCRIPTION: aux adjrange
+
+# aux
+aux 0 0 0 1800 2100 0 0
+aux 1 13 2 1200 2100 0 0
+aux 2 35 3 1300 1700 0 0
+
+# adjrange
+adjrange 0 0 1 900 1200 12 4 0 0
+adjrange 1 0 1 1400 1600 12 4 0 0
+adjrange 2 0 1 1800 2100 12 4 0 0
+

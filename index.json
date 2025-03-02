@@ -5765,8 +5765,24 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/bnf/srk_aux_adjrange.txt",
+      "hash": "eab2e66f8fcca8b360e1187ed1550eb7e8f94f542bf7ba9920cffc1c44772d4b",
+      "title": "Srks aux and adjrange",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "bnf",
+        "diff"
+      ],
+      "author": "sorki",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/bnf/srk_blackbird.txt",
-      "hash": "9f80455c0e13abb61efaea16448c1ecb62d2c2d8b299e8cada8692c7eeeefa96",
+      "hash": "9e6ddb7a4e04f418cfbbfcdf9ee3f6e21f7f11f68211941c77dc37b8a9711c21",
       "title": "Srks H7",
       "firmware_version": [
         "4.5"
@@ -5782,7 +5798,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/srk_era_detailed.txt",
-      "hash": "0fa231074e3995b2487857d540d4507f6a90ea9539ae95179ed19b172226a965",
+      "hash": "27f7768874bd2a492bd9c7cbf8fe3911024e09221c6030e0ac45f33208fe584c",
       "title": "Srks ERA Detailed",
       "firmware_version": [
         "4.5"
@@ -5798,7 +5814,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/srk_era_detailed_blackbird_rest.txt",
-      "hash": "83f445757176dcab45aee0ea30755b1a75fba636ccb9815ac78a96a56111370a",
+      "hash": "70496d2ff8116a89581ff8b2013091f3bada0a578771659d4ee799616554b68c",
       "title": "Srks ERA Detailed with Blackbird rest",
       "firmware_version": [
         "4.5"
@@ -5814,7 +5830,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/srk_era_simplified.txt",
-      "hash": "e75774e41eac776717d5970191854c4ff255f03b742ae6c43940ec46f59524aa",
+      "hash": "6fbdb7bb17d6c77c4504893d014bee4ea68e7130636d8a166c261379cff74f1e",
       "title": "Srks ERA Simplified",
       "firmware_version": [
         "4.5"
@@ -5830,7 +5846,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/srk_era_simplified_blackbird_rest.txt",
-      "hash": "22f29d9d51dc07d926b808922d3fcbd3e52284b85c3c975d23e8fa13ec07ef4a",
+      "hash": "31d3bcbd795212772d3e1d2a44e16c46284bc4258e345c98eba5397f680dadfd",
       "title": "Srks ERA Simplified with Blackbird rest",
       "firmware_version": [
         "4.5"
@@ -6735,7 +6751,7 @@
     },
     {
       "fullPath": "presets/4.5/rates/Srsk_rates.txt",
-      "hash": "1cdfe0dc7753317b37869c2b0b5a064266a3157553a656998222da020cbcfb92",
+      "hash": "65b6cbece94d74121720727c2c1505240c2d1d43a1f16d90e140202775a865bc",
       "title": "Srks Rates",
       "firmware_version": [
         "4.3",
